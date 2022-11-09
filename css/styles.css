@@ -1,0 +1,60 @@
+:root {    
+    --primaryFont: 'Oswald', sans-serif;
+    --textFont: 'Lato', sans-serif;
+    --gray: rgb(91, 93, 96);
+}
+
+/** GLOBALS  **/
+
+html {
+    box-sizing: border-box;    
+    font-size: 62.5%;
+}
+
+:is( *, *:before, *:after ) {
+    box-sizing: inherit
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--textFont);   
+    line-height: 2;      
+    padding: 0;
+    margin: 0;
+}
+
+
+:is( h1, h2, h3, h4, h5, h6, p, ol, ul ) {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+
+/** CARDS  **/
+
+.cards {
+    min-height: 40rem;
+    box-shadow: .1rem .1rem .7rem var(--gray);
+    cursor: pointer;    
+}
+
+.cardName {
+    font-family: var(--primaryFont);
+    text-transform:uppercase;
+    letter-spacing: .5rem;
+    font-style: italic;
+}
+
+.cardImage {
+    filter: drop-shadow( .1rem .1rem .5rem var(--gray) );
+    min-width: 100%;
+}
+
+.cardAbilities:last-of-type {
+margin-bottom: 5rem;
+}
